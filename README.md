@@ -28,6 +28,7 @@ In the next few lessons, we'll be going through the following steps.
 * Create Lambda function for fetching terms
 * Setup API Gateway for API management
 
+<!--
 ### Lambda Function Code:
 
 ```python
@@ -142,6 +143,9 @@ def lambda_handler(event, context):
                 'message': str(e)
             })
         }
+-->
+
+<!-->
 ```
 TEST Event:
 
@@ -152,6 +156,7 @@ TEST Event:
   }
 }
 ```
+-->
 
 ### DynamoDB AWS CLI Commands:
 
