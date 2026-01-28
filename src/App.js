@@ -29,8 +29,9 @@ const App = () => {
       });
   };
 
-  return (
-    <div className="App">
+return (
+  <div className="App">
+    <div className="page-container">
       <header className="App-header">
         <h1>Cloud Dictionary</h1>
         <input
@@ -39,18 +40,23 @@ const App = () => {
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
         />
-        <button onClick={handleSearch}>Search</button> {/* Add Search button */}
+        <button onClick={handleSearch}>Search</button>
       </header>
+
       <div className="dictionary-container">
         {filteredTerms.map((term) => (
-          <div key={term.term} className="card">
+          <div key={term.term} className="card full-card">
             <h3>{term.term}</h3>
             <p>{term.definition}</p>
           </div>
         ))}
       </div>
     </div>
-  );
+  </div>
+);
+
 };
 
 export default App;
+
+
